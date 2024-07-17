@@ -22,6 +22,12 @@
     padding: 30px 50px;
 }
 
+.section-content{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .display-flex{
     display: flex;
 }
@@ -49,6 +55,7 @@ p{
     color: var(--p-color);
     margin: 15px 0;
     font-size: .9rem;
+    line-height: 1.5;
 }
 
 img{
@@ -215,11 +222,6 @@ img{
     margin: 20px auto 0;
 }
 
-.destination-content{
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
-}
 
 .destination-container{
     margin: 40px 0;
@@ -272,12 +274,6 @@ img{
     margin: 0 auto;
 }
 
-.choose-us-content{
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
-}
-
 .choose-us-container{
     margin: 30px 0;
 }
@@ -321,4 +317,77 @@ img{
 
 .choose-us-item h4{
     font-weight: 800;
+}
+
+
+
+
+/* 
+----------------------------------------- Deals and Discounts Section ----------------------
+*/
+.deals-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.deal-container{
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)), url("../Images/Group\ 39.png");
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.deals-container-2{
+    background-image: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,30%)), url("../Images/Group\ 40.png");
+}
+
+
+
+.deal-item{
+    width: 60%;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 90%);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.deals-container-2 .deal-item{
+    margin-left: 0;
+}
+
+.container-details,
+.item-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-details{
+    gap: 10px;
+    color: #5A5A5D;
+}
+
+.item-details i{
+    color: var(--primary-color);
+}
+
+.deal-item h4{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.deal-item h5{
+    color: var(--primary-color);
+    font-size: .9rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.deals-section > button{
+    display: block;
+    margin: 30px auto;
 }
