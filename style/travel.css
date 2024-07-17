@@ -483,3 +483,40 @@ hr{
     font-weight: 700;
 }
 
+
+
+
+/* 
+-------------------------------------- Footer Section -----------------------------
+*/
+.footer-section{
+    background-color: rgba(19, 19, 24, 5%);
+}
+
+.footer-content{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 0 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p{
+    max-width: 750px;
+}
+
+.social-container i{
+    margin: 10px;
+}
+
+.footer-content hr{
+    margin: 20px 0 25px;
+    width: 100%;
+}
+
+.footer-content small{
+    color: var(--p-color);
+}
+
