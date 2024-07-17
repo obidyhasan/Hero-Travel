@@ -212,7 +212,7 @@ img{
 */
 .destination-section{
     max-width: 1440px;
-    margin: 30px auto;
+    margin: 20px auto 0;
 }
 
 .destination-content{
@@ -222,7 +222,7 @@ img{
 }
 
 .destination-container{
-    margin: 40px;
+    margin: 40px 0;
 }
 
 .destination-container > div{
@@ -261,4 +261,64 @@ img{
     transform: translate(-50%, -50%);
     color: white;
     font-size: 1.1rem;
+}
+
+
+/* 
+------------------------------------------ Why Choose Us -------------------------------------
+*/
+.choose-us-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.choose-us-content{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.choose-us-container{
+    margin: 30px 0;
+}
+
+.row-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.row-2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: .5fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.choose-us-item-1{
+    background-color: rgba(251, 181, 99, 20%);
+}
+
+.choose-us-item-2{
+    background-color: rgba(41, 206, 246, 20%);
+}
+
+.choose-us-item-3{
+    background-color: rgba(233, 68, 68, 20%);
+}
+
+.choose-us-item{
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.choose-us-item img{
+    margin: 10px 0;
+    width: 44px;
+    height: 44px;
+}
+
+.choose-us-item h4{
+    font-weight: 800;
 }
