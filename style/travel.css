@@ -158,7 +158,6 @@ video{
     padding: 10px;
     border-radius: 6px;
     background-color: rgba(255, 255, 255, 40%);
-    filter: blur(30);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
@@ -366,6 +365,7 @@ video{
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .item-details{
@@ -426,6 +426,11 @@ video{
     padding: 25px;
     border-radius: 8px;
     border: 1.5px solid var(--primary-color);
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 
@@ -459,6 +464,7 @@ hr{
     background-repeat: no-repeat;
     border-radius: 8px;
     position: relative;
+    height: 320px;
 }
 
 .tag-box{
@@ -520,3 +526,70 @@ hr{
     color: var(--p-color);
 }
 
+
+
+/* ---------------------------------------------- Responsive ---------------------------------------------- */
+
+/* Medium Device */
+@media screen and (max-width: 992px){
+
+    .navbar{
+        padding: 20px 30px;
+    }
+
+    .section-padding{
+        padding: 30px 30px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .popular-section,
+    .place-section,
+    .newsletter-section{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section{
+        padding: 80px 20px;
+    }
+
+    .deal-container{
+        padding: 20px;
+    }
+
+    .deal-item{
+        width: 100%;
+        margin-top: 150px;
+        padding: 20px;
+    }
+
+
+}
+
+/* Small Device */
+@media screen and (max-width: 576px){
+
+    .form-section,
+    .destination-item1,
+    .destination-item2,
+    .destination-item3,
+    .row-1,
+    .row-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .destination-container > div{
+        height: auto;
+    }
+
+    .hero-section{
+        align-items: stretch;
+    }
+
+}
